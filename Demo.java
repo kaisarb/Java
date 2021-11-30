@@ -1,7 +1,7 @@
 class Demo{
       int  value1;
       int  value2;
-      Demo(){
+      Demo(int i){
          value1 = 10;
          value2 = 20;
          System.out.println("Inside Constructor");
@@ -9,11 +9,12 @@ class Demo{
  
      public void display(){
         System.out.println("Value1 === "+value1);
-        System.out.println("Value2 === "+value2);
+		return;
+        //System.out.println("Value2 === "+value2);
     }
  
    public static void main(String args[]){
-       Demo d1 = new Demo();
+       Demo d1 = new Demo(5);
       d1.display();
   }
 }
